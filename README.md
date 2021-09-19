@@ -5,8 +5,8 @@
 ## Objective
 The ***Sudoku*** is a logic-based, combinatorial number-placement puzzle. In classic sudoku, the objective is to fill a 9×9 grid with some numbers so that each column, each row, and each of the nine 3×3 boxes that compose the grid contain all of the numbers from 1 to 9. The puzzle setter provides a partially completed grid, which for a well-posed puzzle has a *single solution*.
 
-This is a ***node.js*** app which implements an ***ASP encoding*** that allows to solve every kind of *sudoku 9x9*. <br>
-The ASP system used to perform the solution is ***clingo*** which is implemented, using the **clingo-wasm module**, into the app itself.
+This is a [node.js](https://github.com/nodejs/node) app which implements an ***ASP encoding*** that allows to solve every kind of *sudoku 9x9*. <br>
+The ASP system used to perform the solution is [clingo](https://github.com/potassco/clingo) which is implemented, using the [clingo-wasm module](https://github.com/domoritz/clingo-wasm), into the app itself.
 
 ## Specifications
 
@@ -16,8 +16,8 @@ The solver takes as input two parameter through the command line:
 	node solverSudoku.js <input file> <output file>
 
 Where:
-- "<input file>": it is the *.txt input file path*. Whithin it there is the sudoku to be solved.
-- "<output file>": it is the *.txt output file path*. Whithin it will be written the solution of the sudoku taken in input.
+- "input file": it is the *.txt input file path*. Whithin it there is the sudoku to be solved.
+- "output file": it is the *.txt output file path*. Whithin it will be written the solution of the sudoku given in input.
 
 ### Input file example
 This is the content of the input file:
